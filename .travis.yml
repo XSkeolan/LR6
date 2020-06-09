@@ -5,3 +5,8 @@ solution: Solution1.sln
 script:
   - dotnet restore
   - dotnet test
+test {
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat "full"
+    }
