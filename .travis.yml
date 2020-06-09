@@ -3,11 +3,11 @@ os: windows
 mono: none
 solution: Solution1.sln
 apply plugin: 'java'
-script:
-  - dotnet restore
-  - dotnet test
-  - test {
+test {
     testLogging {
         events "passed", "skipped", "failed"
         exceptionFormat "full"
     }
+script:
+  - dotnet restore
+  - dotnet test
