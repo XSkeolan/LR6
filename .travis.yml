@@ -1,5 +1,6 @@
 language: csharp
 os: windows
+mono: none
 solution: Solution1.sln
 script:
   - msbuild /p:Configuration=Release Solution1.sln
