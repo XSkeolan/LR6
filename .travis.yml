@@ -2,11 +2,6 @@ language: csharp
 os: windows
 mono: none
 solution: Solution1.sln
-apply plugin: 'java'
 script:
   - dotnet restore
-  - dotnet test {
-    testLogging {
-        events "passed", "skipped", "failed"
-        exceptionFormat "full"
-    }
+  - dotnet test
