@@ -5,7 +5,8 @@ solution: Solution1.sln
 apply plugin: 'java'
 script:
   - dotnet restore
-  test {
+  - dotnet test
+  - test {
     testLogging {
         events "passed", "skipped", "failed"
         exceptionFormat "full"
