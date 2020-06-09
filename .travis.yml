@@ -3,5 +3,5 @@ os: windows
 mono: none
 solution: Solution1.sln
 script:
-  - msbuild 
-  - dotnet test ../UnitTestProject1/bin/Debug/UnitTestProject1.dll
+  - dotnet restore
+  - dotnet test
