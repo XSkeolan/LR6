@@ -2,6 +2,7 @@ language: csharp
 os: windows
 mono: none
 solution: Solution1.sln
+IsTestProject: true
 script:
   - dotnet restore
   - dotnet test
