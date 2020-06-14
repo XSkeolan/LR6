@@ -1,7 +1,6 @@
 language: csharp
 os: windows
 mono: none
-dotnet: 2.1.402
 solution: Solution1.sln
 script:
   - cd UnitTestProject1
