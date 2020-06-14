@@ -1,8 +1,8 @@
 language: csharp
 os: windows
 mono: none
-dotnet: 2.1.502
+dotnet: 2.1.402
 solution: Solution1.sln
 script:
-  - dotnet restore
+  - cd UnitTestProject1
   - dotnet test
