@@ -3,6 +3,7 @@ os: windows
 mono: none
 solution: Solution1.sln
 install:
+  - nuget restore Solution1.sln
   - nuget install MSTest.TestAdapter
   - nuget install MSTest.TestFramework
 script:
