@@ -3,5 +3,6 @@ os: windows
 mono: none
 solution: Solution1.sln
 script:
+  - dotnet restore
   - cd UnitTestProject1
   - dotnet test
