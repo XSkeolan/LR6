@@ -5,6 +5,5 @@ solution: Solution1.sln
 script:
   - install-package MSTest.TestAdapter
   - install-package MSTest.TestFramework
-  - dotnet restore
   - cd UnitTestProject1
   - dotnet test
