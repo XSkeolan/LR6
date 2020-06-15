@@ -2,8 +2,9 @@ language: csharp
 os: windows
 mono: none
 solution: Solution1.sln
+install:
+  - nuget install MSTest.TestAdapter
+  - nuget install MSTest.TestFramework
 script:
-  - install-package MSTest.TestAdapter
-  - install-package MSTest.TestFramework
   - cd UnitTestProject1
   - dotnet test
