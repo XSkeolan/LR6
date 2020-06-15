@@ -4,4 +4,4 @@ mono: none
 solution: Solution1.sln
 script:
   - cd UnitTestProject1
-  - vstest.console.exe UnitTestProject1.dll
+  - vstest UnitTestProject1.dll
